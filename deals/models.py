@@ -43,4 +43,8 @@ class Produit(models.Model):
     region = models.ForeignKey(Region)
     categorie = models.ForeignKey(Categorie)
     
+    class Meta:
+        ordering = ['date_fin']
+
+    
 
